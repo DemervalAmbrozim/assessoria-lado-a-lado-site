@@ -58,6 +58,9 @@
   h2 { font-weight:900; color:var(--navy); font-size:clamp(1.6rem,3.6vw,2.4rem); line-height:1.2; margin:10px 0 14px; }
   .sub { color:var(--suave); max-width:640px; }
   section.escuro .sub { color:#C9D3E3; }
+  #como .grade { grid-template-columns:repeat(5,minmax(0,1fr)); }
+  @media (max-width:980px){ #como .grade { grid-template-columns:repeat(2,minmax(0,1fr)); } }
+  @media (max-width:560px){ #como .grade { grid-template-columns:1fr; } }
   .grade { display:grid; gap:18px; margin-top:36px; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); }
   .card { background:#fff; border:1px solid var(--linha); border-radius:16px; padding:24px; }
   .card h3 { color:var(--navy); font-size:1.05rem; font-weight:800; margin-bottom:6px; }
@@ -111,7 +114,7 @@
       <h1>Mais do que uma consultoria, <span>um parceiro de gestão.</span></h1>
       <p class="lead">Ajudamos donos e gestores a enxergar com clareza o cenário atual, priorizar o que realmente importa e colocar em prática ações que geram resultado: no caixa, nos custos, nos processos e nas decisões.</p>
       <div class="acoes">
-        <a class="btn" href="https://agendar.assessorialadoalado.com.br/">Agende a 1ª conversa sem custo</a>
+        <a class="btn" href="https://agendar.assessorialadoalado.com.br/">Agende a 1ª conversa, por nossa conta</a>
         <a class="btn sec" href="https://wa.me/5527999712727">Falar no WhatsApp</a>
       </div>
       <p class="nota">A primeira conversa é por nossa conta e, de preferência, vamos até você. Assim a gente se conhece e descobre juntos como caminhar lado a lado nas melhorias que fazem sentido para a sua empresa.</p>
@@ -144,7 +147,7 @@
   <section id="recebe" class="escuro">
     <div class="wrap">
       <div class="selo">Depois das duas primeiras conversas</div>
-      <h2>O que você recebe, <span>sem custo</span></h2>
+      <h2>O que você recebe, <span>por nossa conta</span></h2>
       <div class="grade">
         <div class="card"><h3>Uma visão clara da empresa hoje</h3><p>O que está funcionando e o que pede atenção.</p></div>
         <div class="card"><h3>Os pontos que mais pesam, em ordem</h3><p>Priorizados pelo que é mais urgente e gera mais impacto.</p></div>
