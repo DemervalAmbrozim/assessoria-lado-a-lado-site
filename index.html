@@ -6,7 +6,10 @@
 <title>Assessoria Lado a Lado | Mais do que uma consultoria, um parceiro de gestão</title>
 <meta name="description" content="Assessoria de gestão financeira e administrativa. Mais do que uma consultoria, um parceiro de gestão. A primeira conversa é por nossa conta.">
 <meta name="theme-color" content="#022251">
-<link rel="icon" href="favicon.png">
+<link rel="icon" href="favicon.ico" sizes="48x48">
+<link rel="icon" type="image/png" sizes="48x48" href="icone-48.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icone-96.png">
+<link rel="icon" type="image/png" sizes="192x192" href="icone-192.png">
 <link rel="apple-touch-icon" href="apple-touch-icon.png">
 <meta property="og:type" content="website">
 <meta property="og:title" content="Assessoria Lado a Lado">
@@ -21,7 +24,8 @@
 <script type="application/ld+json">
 {"@context":"https://schema.org","@type":"ProfessionalService","name":"Assessoria Lado a Lado",
  "description":"Assessoria de gestão financeira e administrativa.",
- 
+ "url":"https://assessorialadoalado.com.br/","logo":"https://assessorialadoalado.com.br/icone.png","image":"https://assessorialadoalado.com.br/og.png",
+ "address":{"@type":"PostalAddress","addressLocality":"Cariacica","addressRegion":"ES","addressCountry":"BR"},
  "telephone":"+55-27-99971-2727","email":"assessorialadoalado@gmail.com",
  "sameAs":["https://www.instagram.com/assessorialadoalado/","https://www.facebook.com/profile.php?id=61594662363079","https://www.linkedin.com/company/assessorialadoalado/"]}
 </script>
@@ -87,6 +91,12 @@
   @media (max-width:820px){ .hero .wrap { grid-template-columns:1fr; } .hero .ilustra { max-width:420px; margin:8px auto 0; } }
   .assinatura { font-family:'Kaushan Script','Brush Script MT',cursive; font-weight:400; color:var(--gold); font-size:1.5rem; }
   .frase span { font-family:'Kaushan Script','Brush Script MT',cursive; font-weight:400; }
+  figure.foto { margin:0; }
+  figure.foto figcaption { margin-top:12px; font-size:.86rem; color:var(--suave); line-height:1.5; text-align:center; font-style:italic; }
+  @media (max-width:820px){ figure.foto { max-width:420px; margin:8px auto 0; } figure.foto .ilustra { margin:0; } }
+  .post time { display:block; font-size:.8rem; font-weight:700; color:var(--gold); text-transform:uppercase; letter-spacing:.05em; margin-bottom:6px; }
+  .mais { margin-top:22px; font-weight:700; }
+  .mais a { color:var(--navy); }
   footer { background:var(--navy2); color:#C9D3E3; padding:40px 0; font-size:.92rem; }
   footer .wrap { display:flex; flex-wrap:wrap; gap:24px; justify-content:space-between; }
   footer a { color:#fff; text-decoration:none; font-weight:600; }
@@ -101,6 +111,7 @@
     <nav>
       <a href="#como">Como trabalhamos</a>
       <a href="#areas">Onde contribuímos</a>
+      <a href="#conteudos">Conteúdos</a>
       <a href="#duvidas">Dúvidas</a>
     </nav>
     <a class="btn" href="https://agendar.assessorialadoalado.com.br/">Agendar conversa</a>
@@ -120,7 +131,10 @@
       </div>
       <p class="nota">A primeira conversa é por nossa conta e, de preferência, vamos até você. Se fizer sentido, seguimos juntos, num formato flexível que cabe no seu caixa. Fique tranquilo e vamos trabalhar!</p>
       </div>
-      <img class="ilustra" src="conversa.jpg" width="1031" height="720" alt="Duas pessoas conversando frente a frente numa mesa de escritório">
+      <figure class="foto">
+        <img class="ilustra" src="conversa.jpg" width="1031" height="720" alt="Duas pessoas conversando frente a frente numa mesa de escritório">
+        <figcaption>Mais de 20 anos em gestão financeira e administrativa, sempre ao lado de quem decide. Só seguimos juntos quando faz sentido para os dois lados e a sua empresa vai, de verdade, evoluir com esse apoio.</figcaption>
+      </figure>
     </div>
   </section>
 
@@ -199,6 +213,21 @@
     </div>
   </section>
 
+  <section id="conteudos" style="padding-top:0">
+    <div class="wrap">
+      <div class="selo">Conteúdos recentes</div>
+      <h2>O que temos <span>conversado nas redes</span></h2>
+      <div class="grade">
+<!--CONTEUDOS-->
+        <article class="card post"><time datetime="2026-10-13">13 out 2026 · Holding</time><h3>Sua empresa e o patrimônio da família estão no mesmo bolso?</h3><p>Quando tudo fica no nome da pessoa física, uma dificuldade na empresa ou uma sucessão sem planejamento pode pesar sobre a família. A holding pode ajudar, mas não é fórmula pronta: cada caso pede a conta feita, com calma, junto com o contador e o advogado.</p></article>
+        <article class="card post"><time datetime="2026-10-02">2 out 2026 · Gestão</time><h3>Onde a sua gestão pesa mais hoje?</h3><p>Financeiro, administrativo, planejamento, processos e governança: as frentes em que a gestão costuma pesar no dia a dia. Qual delas pesa mais na sua empresa?</p></article>
+        <article class="card post"><time datetime="2026-10-01">1 out 2026 · Prioridades</time><h3>Nem tudo que é urgente é o mais importante</h3><p>Separar o urgente do importante é o primeiro passo para começar pelo que gera mais impacto no caixa e na operação.</p></article>
+<!--/CONTEUDOS-->
+      </div>
+      <p class="mais"><a href="conteudos.html">Ver todos os conteúdos →</a></p>
+    </div>
+  </section>
+
   <section id="duvidas" style="padding-top:0">
     <div class="wrap">
       <div class="selo">Dúvidas frequentes</div>
@@ -238,5 +267,9 @@
     <div class="assinatura">Lado a Lado com você.</div>
   </div>
 </footer>
+<script>
+// Contador de visitas (sem cookie e sem dado pessoal): soma 1 por dia na aba Visitas da planilha da Assessoria.
+try { fetch('https://script.google.com/macros/s/AKfycby46XWLWR377Z8W-cd0evqx7UJjBM6dhXSZY77aMBjQz2GBK3PvdwQX5ue5n4ofld0a/exec?acao=visita&p=site', { mode: 'no-cors' }); } catch (e) {}
+</script>
 </body>
 </html>
